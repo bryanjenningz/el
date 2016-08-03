@@ -2,7 +2,7 @@
 Declaratively transform JavaScript state to HTML with one simple function.
 
 ## How to get started.
-Just copy and paste the code into a file and include that file in a script tag. Done! No messing around, just instant productivity.
+Just copy and paste the code from `el.js` into a file and add that file as a script tag. Done! No messing around, just instant productivity.
 `<script src="el.js"></script>`
 
 ## Examples
