@@ -29,7 +29,7 @@ If you want your view to react to changes, just use a simple rendering function 
 var rootEl = document.getElementById('root');
 var state = {count: 0};
 var increment = () => { state.count++; render(); };
-var decrement = () => { state.count++; render(); };
+var decrement = () => { state.count--; render(); };
 var render = () => {
   while (rootEl.firstChild) { rootEl.removeChild(rootEl.firstChild); }
   var element = (
@@ -50,7 +50,8 @@ And then just add the root DIV tag to your HTML and it works!
   <head></head>
   <body>
     <div id="root"></div>
-    <script src="index.js"></div>
+    <script src="el.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
 ```
