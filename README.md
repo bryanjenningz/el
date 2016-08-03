@@ -25,6 +25,7 @@ var element = (
 
 If you want your view to react to changes, just use a simple rendering function that renders your elements to a DOM node after state changes. Here's a simple counter example.
 ```javascript
+// index.js
 var rootEl = document.getElementById('root');
 var state = {count: 0};
 var increment = () => { state.count++; render(); };
@@ -41,6 +42,17 @@ var render = () => {
   rootEl.appendChild(element);
 };
 render();
+```
+And then just add the root DIV tag to your HTML and it works!
+```html
+<!doctype html>
+<html>
+  <head></head>
+  <body>
+    <div id="root"></div>
+    <script src="index.js"></div>
+  </body>
+</html>
 ```
 
 ## API
